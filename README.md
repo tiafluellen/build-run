@@ -45,9 +45,11 @@ docker build -t build-run .
 
 ```
 
+```markdown
 - To run your docker container in port 3000 run the command:
 
 ```bash
+docker run -d -p 3000:3000 --name build-run-container build-run
 
 ```
 
@@ -57,6 +59,18 @@ docker build -t build-run .
 Containerization with Docker is different from using a virtual machine because Docker containers share the host computer's operating system kernel instead of running a complete operating system inside each container. Virtual machines usually require more resources because each VM has its own operating system. Docker containers are smaller and can start much faster.
 
 A development team might choose Docker because it makes applications easier to run consistently on different computers and environments. The application and its dependencies are packaged together in the container, which helps prevent problems caused by different software versions or computer setups. Docker also makes it easier to deploy applications and use them in development and production environments. For an application like this Node.js web app, Docker provides a simple way to package everything needed to run the application and make sure it works consistently.
+
+
+```markdown
+## Screenshots
+
+### Application Running
+
+![Application running at localhost:3000](application.png)
+
+### API Status
+
+![API response at localhost:3000/api/status](api-status.png)
 
 
 
