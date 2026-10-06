@@ -41,6 +41,7 @@ Your task is to containerize this existing application using Docker. You need to
 - To build the docker image run the command:
 
 ```bash
+docker build -t build-run .
 
 ```
 
