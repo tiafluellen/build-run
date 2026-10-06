@@ -54,6 +54,10 @@ docker build -t build-run .
 ## Reflection Question
 **Answer the following question in the space below**: How does containerization with Docker differ from using virtual machines, and why might a development team choose Docker containers over VMs for deploying applications like the one you just containerized?
 
+Containerization with Docker is different from using a virtual machine because Docker containers share the host computer's operating system kernel instead of running a complete operating system inside each container. Virtual machines usually require more resources because each VM has its own operating system. Docker containers are smaller and can start much faster.
+
+A development team might choose Docker because it makes applications easier to run consistently on different computers and environments. The application and its dependencies are packaged together in the container, which helps prevent problems caused by different software versions or computer setups. Docker also makes it easier to deploy applications and use them in development and production environments. For an application like this Node.js web app, Docker provides a simple way to package everything needed to run the application and make sure it works consistently.
+
 
 
 ## Application Requirements for Docker
